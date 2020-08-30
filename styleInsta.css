@@ -52,7 +52,7 @@ body{
     flex-direction: column;
     background-color: #ffffff;
     width: 100%;
-    padding: 1,3rem 0;
+    padding: 1.8rem 0;
     border: 1px solid lightgray;
 }
 .instagram-logo {
@@ -73,7 +73,8 @@ body{
 }
 
 .profile-photo img{
-    height: 8rem;
+    width: 9rem;
+    height: 9rem;
 }
 
 
@@ -86,7 +87,7 @@ body{
 }
 .insta-logout {
     color: #0095f6;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 .not-account{
@@ -104,6 +105,7 @@ body{
     justify-content: center;
     width: 100%;
     padding: 1.3rem 0;
+    font-weight: bolder;
 }
 
 .download{
@@ -115,13 +117,37 @@ body{
 }
 
 .app-download{
-    height: 3rem;
-    width: 10rem;
+    height: 6rem;
+    width: 15rem;
     background-size: cover;
 }
 
+.app-download:nth-child(1){
+    background-image: url('img/apstore.png');
+}
 
+.app-download:nth-child(2){
+    background-image: url('img/pstore.png');
+}
 
+/* Media Queries*/
 
+@media(max-width: 1024px){
+    .instagram-wrapper{
+        width: 90%;
+    }
+}
+
+@media(max-width: 650px){
+    .instagram-wrapper{
+        width: 90%;
+    }
+    .instagram-phone{
+        display: none;
+    }
+    .instagram-continue{
+        width: 100%;
+    }
+}
 
  
